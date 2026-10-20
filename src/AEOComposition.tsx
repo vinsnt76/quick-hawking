@@ -245,7 +245,7 @@ export const CyberParticleNetwork = ({ frame }: { frame: number }) => {
         const floatX = startX + Math.sin(frame * 0.02 + i) * 16;
         const opacity = interpolate(
           currentY,
-          [1080, 950, 150, 40],
+          [40, 150, 950, 1080],
           [0, 0.35, 0.35, 0],
           { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }
         );

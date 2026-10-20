@@ -33,7 +33,7 @@ export const RemotionRoot = () => {
 
       {/* 3. Individual Slide Compositions (for frame inspection or still export) */}
       {CAROUSEL_SLIDES.map((slide) => {
-        const cleanId = `Slide_${slide.stepNumber}_${slide.eyebrow.replace(/[^a-zA-Z0-9]/g, '_')}`;
+        const cleanId = `Slide_${slide.stepNumber}_${slide.eyebrow.replace(/[^a-zA-Z0-9]+/g, '_').replace(/^_+|_+$/g, '')}`;
         return (
           <Composition
             key={slide.stepNumber}
