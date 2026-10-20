@@ -1,2 +1,3 @@
 # quick-hawking
-Quick Hawking project
+
+Quick Hawking project repository.
