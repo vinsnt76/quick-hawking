@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "start": "remotion studio",
-    "render:hero": "remotion render src/index.ts AEOHeroPoster out/aeo-hero.mp4 --codec=h264",
-    "render:reel": "remotion render src/index.ts AEOFullReel out/aeo-7-principles.mp4 --codec=h264"
+    "render:carousel": "remotion render src/index.ts AEObilityCorePrinciplesCarousel out/aeobility-carousel.mp4 --codec=h264",
+    "render:cover": "remotion render src/index.ts AEOCoverSlide out/aeobility-cover.mp4 --codec=h264",
+    "render:cover:still": "remotion still src/index.ts AEOCoverSlide out/aeobility-cover.png"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.240",
